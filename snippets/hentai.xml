@@ -64,11 +64,16 @@
   <remove-project name="device/google/akita-sepolicy" /> 
   <remove-project name="device/google/akita-kernel" /> 
   <remove-project name="device/google/zuma" />
+  <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
+  <remove-project name="platform/bionic" />
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <remove-project name="platform/external/jemalloc_new" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/hardware/google/graphics/common" />
   <remove-project name="platform/hardware/qcom/sm7250/display" />
   <remove-project name="platform/hardware/qcom/sm7250/media" />
   <remove-project name="platform/hardware/qcom/sm7250/gps" />
@@ -100,21 +105,26 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="bionic" name="Kaz205/bionic_hentai" groups="pdk-cw-fs,pdk-fs" remote="github" revision="Ursamoon" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/hentaiOS" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
+  <project path="external/arm-optimized-routines" name="AOSPA/android_external_arm-optimized-routines" groups="pdk" remote="github" revision="uvite" />
+  <project path="external/jemalloc_new" name="Kaz205/android_external_jemalloc-new" groups="pdk" remote="github" revision="uvite" />
+  <project path="frameworks/base" name="Kaz205/platform_frameworks_base_hentai" groups="pdk-cw-fs,pdk-fs" remote="github" revision="Ursamoon" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/google/graphics/common" name="Kaz205/hardware_google_graphics_common" remote="github" revision="Ursamoon" />
   <project path="hardware/qcom/sm7250/display" name="platform_hardware_qcom_sm7250_display" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm7250/media" name="platform_hardware_qcom_sm7250_media" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm7250/gps" name="platform_hardware_qcom_sm7250_gps" groups="pdk" remote="github/hentaiOS" >
     <linkfile src="os_pickup.mk" dest="hardware/qcom/sm7250/Android.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom/sm7250/Android.bp" />
   </project>
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS" />
+  <project path="system/core" name="Kaz205/system_core_hentai" groups="pdk" remote="github" revision="Ursamoon" />
   <project path="packages/apps/helluvaUpdater" name="platform_packages_apps_helluvaUpdater" groups="pdk-fs" remote="github/hentaiOS" />
+  <project path="packages/apps/Settings" name="Kaz205/platform_packages_apps_Settings_hentai" groups="pdk" remote="github" revision="Ursamoon" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" clone-depth="1" />
-  <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS" />
+  <project path="vendor/hentai" name="Kaz205/platform_vendor_hentai" groups="vendor" remote="github" revision="Ursamoon" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" />
@@ -138,10 +148,12 @@
   <project path="prebuilts/module_sdk/Wifi" name="platform_prebuilts_module-sdk_Wifi" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
 
   <project path="device/google/shusky" name="Kaz205/device_google_shusky" remote="github" revision="Ursamoon" />
+  <project path="device/google/shiba" name="CalyxOS/device_google_shiba" remote="github" revision="android14" />
   <project path="device/google/zuma" name="Kaz205/device_google_zuma" remote="github" revision="Ursamoon" />
 
   <!-- Additions from LineageOS -->
-  <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="github/LineageOS" />
+  <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" remote="github" revision="lineage-21.0" />
   <project path="prebuilts/tools-hentai" name="android_prebuilts_tools-lineage" remote="github/LineageOS" />
-  <project path="lineage/scripts" name="LineageOS/scripts" remote="github" revision="main" />
+  <project path="calyx/scripts" name="CalyxOS/scripts" remote="github" revision="android14" />
+  <project path="tools/extract-utils" name="CalyxOS/platform_tools_extract-utils" remote="github" revision="android14" />
 </manifest>
