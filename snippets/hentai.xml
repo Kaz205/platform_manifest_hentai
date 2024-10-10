@@ -98,7 +98,7 @@
   <project path="bionic" name="Kaz205/bionic_hentai" groups="pdk-cw-fs,pdk-fs" remote="github" revision="Vallhound" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="external/jemalloc_new" name="Kaz205/android_external_jemalloc-new" groups="pdk" remote="github" revision="Vallhound" />
-  <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/hentaiOS" />
+  <project path="external/json-c" name="LineageOS/android_external_json-c" groups="pdk" remote="github" revision="lineage-22.0" />
   <project path="frameworks/base" name="Kaz205/platform_frameworks_base_hentai" groups="pdk-cw-fs,pdk-fs" remote="github" revision="Vallhound" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/google/graphics/common" name="Kaz205/hardware_google_graphics_common" remote="github" revision="Vallhound" />
