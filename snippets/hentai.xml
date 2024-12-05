@@ -113,8 +113,8 @@
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="vendor" remote="github/hentaiOS" />
 
-  <project path="device/google/shusky" name="Kaz205/device_google_shusky" remote="github" revision="Ursamoon" />
-  <project path="device/google/zuma" name="Kaz205/device_google_zuma" remote="github" revision="Ursamoon" />
+  <project path="device/google/shusky" name="Kaz205/device_google_shusky" remote="github" revision="adevtool" />
+  <project path="device/google/zuma" name="Kaz205/device_google_zuma" remote="github" revision="adevtool" />
 
   <!-- Additions from LineageOS -->
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="github/LineageOS" />
