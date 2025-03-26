@@ -67,14 +67,13 @@
   <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
-  <remove-project name="platform/external/jemalloc_new" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/hardware/google/graphics/common" />
 
   <!-- hentaiOSのスタート -->
-  <project path="bionic" name="Kaz205/platform_bionic_hentai" groups="pdk" remote="github" revision="Vallhound" />
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS" />
   <project path="build/make" name="platform_build" groups="pdk" remote="github/hentaiOS" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -90,11 +89,10 @@
   </project>
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="external/json-c" name="LineageOS/android_external_json-c" groups="pdk" remote="github" revision="lineage-22.2" />
-  <project path="external/jemalloc_new" name="Kaz205/android_external_jemalloc-new" groups="pdk" remote="github" revision="Vallhound" />
   <project path="frameworks/base" name="Kaz205/platform_frameworks_base_hentai" groups="pdk-cw-fs,pdk-fs" remote="github" revision="Vallhound" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/google/graphics/common" name="Kaz205/hardware_google_graphics_common" remote="github" revision="Vallhound" />
-  <project path="system/core" name="Kaz205/system_core_hentai" groups="pdk" remote="github" revision="Vallhound" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS" />
   <project path="packages/apps/helluvaUpdater" name="platform_packages_apps_helluvaUpdater" groups="pdk-fs" remote="github/hentaiOS" />
   <project path="packages/apps/Settings" name="Kaz205/platform_packages_apps_Settings_hentai" groups="pdk" remote="github" revision="Vallhound" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS" />
